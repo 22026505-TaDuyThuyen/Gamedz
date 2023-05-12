@@ -99,7 +99,8 @@ và số mạng ![player_pw](https://github.com/22026505-TaDuyThuyen/Gamedz/asse
     
     
     * Chơi game
-    <img width="956" alt="play1" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/afb64696-7da6-4a37-bbf5-dc706ccd4126">
+    <img width="959" alt="play2" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/b387adbe-8678-4589-9cec-aef5660e7c7b">
+
 
 
     * Hang rồng
