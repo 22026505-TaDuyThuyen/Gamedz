@@ -36,23 +36,28 @@ Xin chào thầy cô và các bạn em tên là Tạ Duy Thuyên, sinh viên l�
 * Tải SDL2 và các thư viện cần thiết như âm thanh, font chữ, hình ảnh theo các hướng dẫn trong Lazy Foo để có thể tận hưởng game của mình một cách đầy đủ trọn vẹn nhất.
 * Cài đặt makefile trong visual studio code để có thể chạy chương trình
 * Sau khi tải code của mình về thì đưa hết các file .h và .cpp ra ngoài thư mục chính, sử dụng make file như minh họa dưới đây và lưu ý cần đưa đầy đủ các file .cpp vào trong OBJS
-* <img width="999" alt="imagemake" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/dd17d356-3c61-44ca-be76-45c20a19638b">
+<img width="999" alt="imagemake" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/bee32731-f6dd-43b3-af94-6d4e84f2541b">
+
 * bật Terminal và bắt đầu make :
-* <img width="289" alt="terminal" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/c7bafb34-5f12-49a4-817e-a5ca57a6a10f">
+<img width="289" alt="terminal" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/33d6e98c-570a-4ad3-b770-b2a0e585503f">
+
 * Sử dụng file .exe đã hiện lên và bắt đầu trải nghiệm game thôi nào ^_^
 5) Cấu trúc của game:
 * Game được chia làm 12 module và 1 main chính chạy game.
   * (BaseObject.h và BaseObject.cpp) lớp cơ sở cho các đối tượng trong game.
   * (BossObject.h và BossObject.cpp) sử dụng để quản lí đối tượng Boss với 32 khung hình frame chân thực sống động hơn.
-  * (BulletObject.h và BulletObject.cpp) sử dụng để quản lí và set các chức năng cho đạn của nhân vật chính ![sphere_bullet](https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/8d4e7407-b0b0-4a3c-86b6-6854d98335e5) và đạn của "quái thạch" ![la3](https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/f0a15a9e-ddb4-4d61-b89f-85d696e06baa)
+  * (BulletObject.h và BulletObject.cpp) sử dụng để quản lí và set các chức năng cho đạn của nhân vật chính ![sphere_bullet](https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/40935cdf-21fc-4f4c-8f8f-899845ef80bb)
+ và đạn của "quái thạch" ![la3](https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/89a3e509-17c0-4986-8977-8bea0ba7c8ec)
+
   * (CommonFunc.h và CommonFunc.cpp) sử dụng để gọi các thông số cơ bản cho quá trình làm game, gọi các thư viện để có thể chạy game.
   * (ExplosionObject.h và ExplosionObject.cpp) quản lí vụ nổ sau mỗi lần va chạm 
-  * (game_map.h và game_map.cpp) quản lí việc tạo Map : tạo các ô tile map, load các thông số cho các ô tile map để có thể vẽ hình ảnh tương ứng với các trạng thái của ô tile map tạo nên một bản đồ hoàn chỉnh.
+  * (game_map.h và game_map.cpp) quản lí việc tạo Map : tạo các ô tile map, load các thông số cho các ô tile map để có thể vẽ hình ảnh tương ứng với các trạng thái của ô tile map tạo nên   một bản đồ hoàn chỉnh.
   * (Geometric.h và Geometric.cpp) để tạo hình chữ nhật bao quanh và tô màu phần bên trong hình chữ nhật cho các hình ảnh phụ trợ của game như điểm số, số mạng, thời gian...
   * (ImpTimer.h và ImpTimer.cpp) xử lí Timmer và FPS.
   * (MainObject.h và MainObject.cpp) quản lí việc tạo hình ảnh và các chức năng, thông số cho nhân vật main.
-  * (PlayerPower.h và PlayerPower.cpp) đưa hình ảnh phụ trợ như đồng tiền ![money](https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/05fa49d1-c423-418a-9d11-e4f0694be449)
-và số mạng ![player_pw](https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/f0296938-e122-4ece-92c7-b1448d32628d) lên màn hình.
+  * (PlayerPower.h và PlayerPower.cpp) đưa hình ảnh phụ trợ như đồng tiền ![money](https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/cc3fcf72-e25d-4d8e-9699-a427913b9b60)
+ và số mạng ![player_pw](https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/493ef9c7-c7cd-43f0-998b-ae9248065977)
+ lên màn hình.
   * (TextObject.h và TextObject.cpp) hiển thị các text lên màn hình.
   * (ThreatsObject.h và ThreatsObject.cpp) tạo quái vật và set các thông số, tính năng cho quái.
   * main.cpp sử dụng để lấy các tính năng được code trong các lớp trên và cho chạy chương trình.
@@ -60,13 +65,15 @@ và số mạng ![player_pw](https://github.com/22026505-TaDuyThuyen/Gamedz/asse
 6) Luật chơi game và cách chơi game
 * Bạn sẽ có 5 phút để chơi game, nếu hết 5 phút chưa giết được Boss thì thua.
 * Ban đầu bạn sẽ có 4 mạng.
-* Di chuyển nhân vật main bắn các loại quái vật ban đầu gồm lính canh<img width="35" alt="linhcanh" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/4b753743-8bd3-46f1-a123-e994904da913">, quái thạch<img width="29" alt="quaithach2" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/e4b63441-3204-4def-9d63-05694c81fa48">, khủng long bạo chúa<img width="32" alt="dino" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/b4a6d62f-c7c9-4a51-b1c5-6b13dd7e4887">,xử lí mỗi đối tượng quái được cộng 1 điểm. 
-* Đến cuối Map, gặp Boss<img width="83" alt="boss" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/19d10afa-0bf0-41de-bd18-1c339dadd026">
- có 100 máu, Boss bị dính 1 đạn thì trừ 1 máu, bạn được cộng 2 điểm.
+* Di chuyển nhân vật main bắn các loại quái vật ban đầu gồm lính canh<img width="35" alt="linhcanh" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/ddd73f01-4bd8-47a0-aa34-79a2ca0a6cfe">, quái thạch<img width="29" alt="quaithach2" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/242f14e0-0aaa-4d95-a254-ba570f06d1b5">, khủng long bạo chúa<img width="32" alt="dino" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/0accedcf-be43-4870-956a-c8cde2224db5">,xử lí mỗi đối tượng quái được cộng 1 điểm. 
+* Đến cuối Map, gặp Boss<img width="83" alt="boss" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/10ad8f43-0050-4a66-aff4-bce8061b4a4c">
+có 100 máu, Boss bị dính 1 đạn thì trừ 1 máu, bạn được cộng 2 điểm.
 * Ngược lại nếu bạn bị dính 1 đạn của bất kì thể loại quái nào, hay chạm vào người quái thì sẽ bị trừ 1 mạng.
 * Khi rơi xuống vực thì không bị chết mà chỉ thiệt thời gian để quay lại Map.
 * Chiến thắng sau khi giết được Boss.
-* Sử dụng phím<img width="89" alt="phải" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/3a3668df-766a-49e8-b52e-734ada2e4f7f"> để quay sang phải, phím<img width="89" alt="trái" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/9a43a431-0960-4a39-a7a2-98fefd1205a7"> để quay sang trái, chuột phải để nhảy, chuột trái để bắn đạn.
+* Sử dụng phím<img width="89" alt="phải" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/629a5bf5-d836-4cde-8661-e1389c06f95c">
+ để quay sang phải, phím<img width="89" alt="trái" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/d91ea0eb-b212-4dd1-9bf2-f86874b28992">
+ để quay sang trái, chuột phải để nhảy, chuột trái để bắn đạn.
 
 7) Các chức năng hay được phát triển thêm 
 * Menu phù hợp với nội dung và tên của game.
@@ -81,30 +88,36 @@ và số mạng ![player_pw](https://github.com/22026505-TaDuyThuyen/Gamedz/asse
 * Thiết kế được thêm nhiều Map hơn ( hiện tại e đã có được 3 Map)
 * Có thể tạo ra các level chơi để sử dụng được tất cả các Map đã thiết kế được và tăng giảm độ khó cho game.
 * Đồ hỗ trợ nhiều hơn ví dụ như giáp bảo vệ, kim cương( ăn 1 kim cương thì được cộng 5 tiền )...
-* Tạo thêm được nhiều nhân vật hơn để lựa chọn (hiện tại đã có 2 nhân vật) <img width="28" alt="main1" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/64feafef-c7de-4d53-80d4-0e488a4af28c"> <img width="28" alt="mainmain" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/e4f2aab6-7558-485f-beaa-6f1049515430">
+* Tạo thêm được nhiều nhân vật hơn để lựa chọn (hiện tại đã có 2 nhân vật) <img width="28" alt="main1" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/3acfa401-2dd5-4b4f-83aa-233f3a358694"> và <img width="28" alt="mainmain" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/0a4de63c-ca2e-432e-adfc-35dd6fd513cd">
+
+
 * Âm thanh sống động phù hợp với từng trạng thái: ăn tiền, nổ, hồi sinh, bấm nút tại menu.
 # HÌNH ẢNH MÔ TẢ GAME
   * Menu
-  <img width="962" alt="menu" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/c3dab3b0-1dc7-4432-8ca4-c40fb093dc4a">
+  <img width="962" alt="menu" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/25b4c2bd-e371-4024-bf10-c60a2d411ddc">
 
  * GameOver
- <img width="959" alt="over" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/7ed2ffb6-0b6e-46b3-a6ab-277ba290c35d">
+ <img width="959" alt="over" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/637348f0-d7dc-4c15-b0e6-80d2b71d52c8">
+
  
  * Win game
- <img width="957" alt="win" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/d0a07428-1334-4745-a1ad-dc7bc8538f2c">
- 
+ <img width="957" alt="win" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/369fe73e-7a4a-49ee-8ab0-b9a2a5b58cfa">
+
  * Play Game
     * Main nổ
-    <img width="464" alt="ảnh nổ của main" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/7c4a81bb-f86d-4e03-a3a5-b8862ce0509b">
+    <img width="464" alt="ảnh nổ của main" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/b7bc8245-4c85-405a-b16f-70e5e37bf77a">
+
     
     
     * Chơi game
-    <img width="959" alt="play2" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/b387adbe-8678-4589-9cec-aef5660e7c7b">
+    <img width="959" alt="play2" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/8f989d89-c63a-40c4-a172-82dcee44e23c">
+
 
 
 
     * Hang rồng
-    <img width="958" alt="hang rồng" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/fed16f8e-b830-4a0e-bd03-c55ad0d7556c">
+    <img width="958" alt="hang rồng" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/c9ec26d8-292d-4573-8095-827c0625ac83">
+
 
 # RÚT RA KINH NGHIỆM
    * Qua quá trình làm game em rút thêm cho mình được nhiều kinh nghiệm quý giá về code như vận dụng và sắp xếp vị trí của các dòng code một cách hợp lí hơn, hiểu thêm về lập trình hướng đối tượng, sắp xếp các chức năng của game một cách hợp lí. Ngoài ra còn giúp em có thêm kiến thức về phần thiết kế cấu trúc và bố cục của một game, biết tìm kiếm thông tin cần thiết cho project. 
