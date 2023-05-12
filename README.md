@@ -83,15 +83,13 @@ có 100 máu, Boss bị dính 1 đạn thì trừ 1 máu, bạn được cộng 
 * Tạo ra được đối tượng Boss chân thật sống động với 32 khung hình frame.
 * Quái khủng long chỉ bắt đầu hoạt động nếu như nhân vật main đang cách vị trí cuối cùng của Map 2 lần SCREEN_WIDTH.
 * Nếu ăn được lớn hơn hoặc bằng 25 đồng tiền thì bạn sẽ có thêm 1 mạng nữa sau khi chết đủ 4 mạng.
-
+* Âm thanh sống động phù hợp với từng trạng thái: ăn tiền, nổ, hồi sinh, bấm nút tại menu.
 8) Một số cải tiến mong muốn trong tương lai
 * Thiết kế được thêm nhiều Map hơn ( hiện tại e đã có được 3 Map)
 * Có thể tạo ra các level chơi để sử dụng được tất cả các Map đã thiết kế được và tăng giảm độ khó cho game.
 * Đồ hỗ trợ nhiều hơn ví dụ như giáp bảo vệ, kim cương( ăn 1 kim cương thì được cộng 5 tiền )...
 * Tạo thêm được nhiều nhân vật hơn để lựa chọn (hiện tại đã có 2 nhân vật) <img width="28" alt="main1" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/3acfa401-2dd5-4b4f-83aa-233f3a358694"> và <img width="28" alt="mainmain" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/0a4de63c-ca2e-432e-adfc-35dd6fd513cd">
 
-
-* Âm thanh sống động phù hợp với từng trạng thái: ăn tiền, nổ, hồi sinh, bấm nút tại menu.
 # HÌNH ẢNH MÔ TẢ GAME
   * Menu
   <img width="962" alt="menu" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/25b4c2bd-e371-4024-bf10-c60a2d411ddc">
