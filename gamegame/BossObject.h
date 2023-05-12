@@ -60,6 +60,8 @@ public:
     void setDie() { is_die = true; }
     bool getDie() { return is_die; }
 
+    void setLive() { is_die = false;}
+
 private:
     int map_x_;
     int map_y_;

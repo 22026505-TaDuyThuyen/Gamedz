@@ -9,7 +9,7 @@
 
 #define GRAVITY_SPEED 0.8
 #define MAX_FALL_SPEED 10
-#define PLAYER_SPEED 8
+#define PLAYER_SPEED   10
 #define PLAYER_JUMP_VAL 20
 
 class MainObject : public BaseObject
@@ -71,6 +71,7 @@ public:
 
     int GetDecreaseMoney() const {return money_count -15;}
     
+    ReSetMoneyCount() { money_count = 0; }
 
 private:
     int money_count;

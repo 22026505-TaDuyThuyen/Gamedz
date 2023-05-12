@@ -1,5 +1,5 @@
 #OBJS specifies which files to compile as part of the project
-OBJS = maintachfile.cpp CommonFunc.cpp BaseObject.cpp BossObject.cpp BulletObject.cpp ExplosionObject.cpp game_map.cpp Geometric.cpp ImpTimer.cpp MainObject.cpp PlayerPower.cpp TextObject.cpp ThreatsObject.cpp
+OBJS = main.cpp CommonFunc.cpp BaseObject.cpp BossObject.cpp BulletObject.cpp ExplosionObject.cpp game_map.cpp Geometric.cpp ImpTimer.cpp MainObject.cpp PlayerPower.cpp TextObject.cpp ThreatsObject.cpp
 
 #CC specifies which compiler we're using
 CC = g++
@@ -19,7 +19,7 @@ COMPILER_FLAGS = -w -Wl,-subsystem,windows
 LINKER_FLAGS = -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
 
 #OBJ_NAME specifies the name of our exectuable
-OBJ_NAME = maintachfile
+OBJ_NAME = main
 #This is the target that compiles our executable
 all : $(OBJS)
 	$(CC) $(OBJS) $(INCLUDE_PATHS) $(LIBRARY_PATHS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)

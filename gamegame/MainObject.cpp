@@ -309,13 +309,13 @@ void MainObject::DoPlayer(Map &map_data)
         if (come_back_time_ == 0)
         {
             on_ground_ = false;
-            if (x_pos_ > 256)
+            if (x_pos_ > 512)
             {
                 x_pos_ -= 256; // 4 tile map
             }
             else // nếu vị trí nhân vật đang ở rất gần phía đầu bản đồ
             {
-                x_pos_ = 10;
+                x_pos_ -=64;
             }
             // x_pos chính là vị trí nhân vật rơi xuống vực và xuất hiện trở lại
             y_pos_ = 0;
@@ -570,7 +570,7 @@ void MainObject::CheckToMap(Map &map_data)
     {
         x_pos_ = map_data.max_x_ - width_frame_ - 1; // trừ đi 1 là trừ đi sai số
     }
-    // bài 7 xử lí khi nhân vật rơi xuống vực
+
     if (y_pos_ > map_data.max_y_)
     {
         // độ trễ là 60 để nó quay trở lại
