@@ -106,8 +106,13 @@ và số mạng ![player_pw](https://github.com/22026505-TaDuyThuyen/Gamedz/asse
     * Hang rồng
     <img width="958" alt="hang rồng" src="https://github.com/22026505-TaDuyThuyen/Gamedz/assets/125566588/fed16f8e-b830-4a0e-bd03-c55ad0d7556c">
 
-     
-
+# RÚT RA KINH NGHIỆM
+   * Qua quá trình làm game em rút thêm cho mình được nhiều kinh nghiệm quý giá về code như vận dụng và sắp xếp vị trí của các dòng code một cách hợp lí hơn, hiểu thêm về lập trình hướng đối tượng, sắp xếp các chức năng của game một cách hợp lí. Ngoài ra còn giúp em có thêm kiến thức về phần thiết kế cấu trúc và bố cục của một game, biết tìm kiếm thông tin cần thiết cho project. 
+   * Em xin chân thành cảm ơn các thầy lí thuyết và thầy thực hành đã giúp đỡ và giảng dạy cho em kiến thức để em hoàn thành được project đầu tay của mình.
+ # LIÊN HỆ VỚI EM QUA:
+ _ Gmail : taduythuyen2004@gmail.com
+ 
+ _ Facebook : Tạ Duy Thuyên.
 
 
 
